@@ -1,0 +1,7 @@
+springdoc:
+  show-actuator: true
+  swagger-ui:
+    path: /docs/swagger-ui.html
+server:
+  servlet:
+    context-path: "/base"
