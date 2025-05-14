@@ -2,6 +2,13 @@ springdoc:
   show-actuator: true
   swagger-ui:
     path: /docs/swagger-ui.html
-server:
-  servlet:
-    context-path: "/base"
+
+spring:
+  webflux:
+    base-path: /base
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
